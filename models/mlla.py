@@ -64,7 +64,6 @@ class ConvLayer(nn.Module):
 
 class RoPE(torch.nn.Module):
     r"""Rotary Positional Embedding.
-    An implementation that does not directly use complex operations
     """
     def __init__(self, shape, base=10000):
         super(RoPE, self).__init__()
@@ -85,14 +84,9 @@ class RoPE(torch.nn.Module):
         self.register_buffer('rotations', rotations)
 
     def forward(self, x):
-        # x = torch.view_as_complex(x.reshape(*x.shape[:-1], -1, 2))
-        # pe_x = torch.view_as_complex(self.rotations) * x
-        # return torch.view_as_real(pe_x).flatten(-2)
-        rotations_re, rotations_im = self.rotations[..., :1], self.rotations[..., 1:]
-        x = x.reshape(*x.shape[:-1], -1, 2)
-        x_re, x_im = x[..., :1], x[..., 1:]
-        pe_x = torch.cat([x_re * rotations_re - x_im * rotations_im, x_im * rotations_re + x_re * rotations_im], dim=-1)
-        return pe_x.flatten(-2)
+        x = torch.view_as_complex(x.reshape(*x.shape[:-1], -1, 2))
+        pe_x = torch.view_as_complex(self.rotations) * x
+        return torch.view_as_real(pe_x).flatten(-2)
 
 
 class LinearAttention(nn.Module):
@@ -114,7 +108,6 @@ class LinearAttention(nn.Module):
         self.elu = nn.ELU()
         self.lepe = nn.Conv2d(dim, dim, 3, padding=1, groups=dim)
         self.rope = RoPE(shape=(input_resolution[0], input_resolution[1], dim))
-        print('Linear Attention window{}'.format(input_resolution))
 
     def forward(self, x):
         """
