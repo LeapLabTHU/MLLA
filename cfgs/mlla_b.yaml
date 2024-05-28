@@ -1,0 +1,16 @@
+MODEL:
+  TYPE: mlla
+  NAME: mlla_base
+  DROP_PATH_RATE: 0.5
+  MLLA:
+    EMBED_DIM: 96
+    DEPTHS: [ 3, 6, 21, 6 ]
+    NUM_HEADS: [ 3, 6, 12, 24 ]
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  REPROB: 0.25
+  MIXUP: 0.8
+  CUTMIX: 1.0
+  MESA: 2.0
+DATA:
+  BATCH_SIZE: 64
