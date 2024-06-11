@@ -121,11 +121,11 @@ This code is developed on the top of [Swin Transformer](https://github.com/micro
 If you find this repo helpful, please consider citing us.
 
 ```latex
-@article{han2023agent,
-  title={Agent Attention: On the Integration of Softmax and Linear Attention},
-  author={Han, Dongchen and Ye, Tianzhu and Han, Yizeng and Xia, Zhuofan and Song, Shiji and Huang, Gao},
-  journal={arXiv preprint arXiv:2312.08874},
-  year={2023}
+@article{han2024demystify,
+  title={Demystify Mamba in Vision: A Linear Attention Perspective},
+  author={Han, Dongchen and Wang, Ziyi and Xia, Zhuofan and Han, Yizeng and Pu, Yifan and Ge, Chunjiang and Song, Jun and Song, Shiji and Zheng, Bo and Huang, Gao},
+  journal={arXiv preprint arXiv:2405.16605},
+  year={2024}
 }
 ```
 
