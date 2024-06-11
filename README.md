@@ -109,7 +109,7 @@ python -m torch.distributed.launch --nproc_per_node=8 main.py --cfg <path-to-con
 - To train `MLLA-T/S/B` on ImageNet from scratch, run:
 
 ```
-python -m torch.distributed.launch --nproc_per_node=8 main.py --cfg <path-to-config-file> --data-path <imagenet-path> --output <output-path>
+python -m torch.distributed.launch --nproc_per_node=8 main.py --cfg <path-to-config-file> --data-path <imagenet-path> --output <output-path> --amp
 ```
 
 ## Acknowledgements
