@@ -116,6 +116,19 @@ python -m torch.distributed.launch --nproc_per_node=8 main.py --cfg <path-to-con
 
 This code is developed on the top of [Swin Transformer](https://github.com/microsoft/Swin-Transformer). 
 
+## Citation
+
+If you find this repo helpful, please consider citing us.
+
+```latex
+@article{han2023agent,
+  title={Agent Attention: On the Integration of Softmax and Linear Attention},
+  author={Han, Dongchen and Ye, Tianzhu and Han, Yizeng and Xia, Zhuofan and Song, Shiji and Huang, Gao},
+  journal={arXiv preprint arXiv:2312.08874},
+  year={2023}
+}
+```
+
 ## Contact
 
 If you have any questions, please feel free to contact the authors. 
