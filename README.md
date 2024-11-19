@@ -8,6 +8,7 @@ This repo contains the official PyTorch code and pre-trained models for **Mamba-
 
 ## News
 
+- November 19 2024: Code for [downstream tasks](./downstream) is released.
 - September 26 2024: **Accepted to NeurIPS 2024 as a poster.** Final ratings: 6, 7, 7, 7 (6: Weak Accept, 7: Accept).
 
 ## Abstract
@@ -125,11 +126,11 @@ This code is developed on the top of [Swin Transformer](https://github.com/micro
 If you find this repo helpful, please consider citing us.
 
 ```latex
-@article{han2024demystify,
+@inproceedings{han2024demystify,
   title={Demystify Mamba in Vision: A Linear Attention Perspective},
   author={Han, Dongchen and Wang, Ziyi and Xia, Zhuofan and Han, Yizeng and Pu, Yifan and Ge, Chunjiang and Song, Jun and Song, Shiji and Zheng, Bo and Huang, Gao},
-  journal={arXiv preprint arXiv:2405.16605},
-  year={2024}
+  booktitle={NeurIPS},
+  year={2024},
 }
 ```
 
