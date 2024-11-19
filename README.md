@@ -119,7 +119,7 @@ python -m torch.distributed.launch --nproc_per_node=8 main.py --cfg <path-to-con
 
 ## Acknowledgements
 
-This code is developed on the top of [Swin Transformer](https://github.com/microsoft/Swin-Transformer). 
+This code is developed on the top of [Swin Transformer](https://github.com/microsoft/Swin-Transformer), [FLatten Transformer](https://github.com/LeapLabTHU/FLatten-Transformer) and [Agent Attention](https://github.com/LeapLabTHU/Agent-Attention). 
 
 ## Citation
 
