@@ -2,7 +2,7 @@
 
 This repo contains the official PyTorch code and pre-trained models for **Mamba-Like Linear Attention (MLLA)**, which is renamed as **Mamba-Inspired Linear Attention (MILA)** in the final manuscript based on the suggestion of NeurIPS reviewers.
 
-+ [Demystify Mamba in Vision: A Linear Attention Perspective](https://arxiv.org/abs/2405.16605)
++ [Demystify Mamba in Vision: A Linear Attention Perspective](https://arxiv.org/abs/2405.16605) [[中文讲解]](https://www.bilibili.com/video/BV1NYzAYxEbZ/?spm_id_from=333.999.0.0&vd_source=b846541b1e7c735e68fcadd44248edf5)
 
 
 
